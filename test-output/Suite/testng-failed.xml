@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listeners.MyTestNGListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="regression.ValidateLoginUsingPOM">
+        <methods>
+          <include name="loginTestUsingPOM"/>
+          <include name="tearDown"/>
+          <include name="end"/>
+          <include name="setUp"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- regression.ValidateLoginUsingPOM -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
